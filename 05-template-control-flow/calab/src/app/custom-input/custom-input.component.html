@@ -1,0 +1,9 @@
+<input type="text" (input)="onInputChange($event)">
+
+<div>
+    @if (!value || value.length < 5) {
+        Type at least 5 characters
+    } @else {
+        Well done!
+    }
+</div>
