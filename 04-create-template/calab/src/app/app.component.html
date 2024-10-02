@@ -1,0 +1,14 @@
+<main class="main">
+  <div class="content">
+    <div>
+      <h1>Hello, {{ title }}</h1>
+      <p>Congratulations! Your app is running. 🎉</p>
+      
+      <div class="divider" role="separator" aria-label="Divider"></div>
+      <app-custom-input [(value)]="inputValue"></app-custom-input>
+      <p>Input value: {{ inputValue }}</p>
+    </div>
+  </div>
+</main>
+
+<router-outlet />
