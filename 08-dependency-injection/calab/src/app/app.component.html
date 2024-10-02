@@ -1,0 +1,25 @@
+<main class="main">
+  <div class="content">
+    <div>
+      <h1>Hello, {{ title }}</h1>
+      <p>Congratulations! Your app is running. 🎉</p>
+      
+      <div class="divider" role="separator" aria-label="Divider"></div>
+      <ul>
+        @for (course of courses; track course.course_id) {
+          <li>
+            <div>
+              <p><strong>Id</strong> {{ course.course_id }}</p>
+              <p><strong>Title:</strong> {{ course.course_name }}</p>
+              <p><strong>Description:</strong>{{ course.course_description }}</p>
+              <p><strong>Duration:</strong> {{ course.course_duration }}</p>
+              <div class="divider" role="separator" aria-label="Divider"></div>
+            </div>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</main>
+
+<router-outlet />
