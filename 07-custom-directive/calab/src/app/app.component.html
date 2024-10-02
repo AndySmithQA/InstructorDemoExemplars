@@ -1,0 +1,20 @@
+<main class="main">
+  <div class="content">
+    <!-- Long-form Syntax-->
+     <!-- <ng-template [appIsAuth]="true">
+      <p>You have access to privleged information</p>
+     </ng-template> -->
+
+    <!-- Short-form Syntax-->
+    <p *appIsAuth="true">You have access to privleged information</p>
+
+    <div>
+      <h1>Hello, {{ title }}</h1>
+      <p>Congratulations! Your app is running. 🎉</p>
+      
+      <div class="divider" role="separator" aria-label="Divider"></div>
+    </div>
+  </div>
+</main>
+
+<router-outlet />
