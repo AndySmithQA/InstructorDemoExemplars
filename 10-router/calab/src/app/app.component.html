@@ -1,0 +1,19 @@
+<main class="main">
+  <div class="content">
+    <div>
+      <h1>Hello, {{ title }}</h1>
+      <p>Congratulations! Your app is running. 🎉</p>
+      
+      <div class="divider" role="separator" aria-label="Divider"></div>
+      <nav>
+        <router-outlet />
+        <ul>
+          <li><a routerLink="/first-component/John">First Component</a></li>
+          <li><a routerLink="/second-component">Second Component</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</main>
+
+
