@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()">
+
+    <label for="product">Product:</label>
+    <input type="text" 
+           id="product" 
+           name="product" 
+           required 
+           [(ngModel)]="order.product" 
+           #product="ngModel"
+           >
+           <div [hidden]="product.valid || product.pristine">
+                Product name is required
+           </div>
+
+    <label for="quantity">Quantity:</label>
+    <input type="text" id="quantity" name="quantity" required [(ngModel)]="order.quantity">
+
+    <button type="submit">Submit</button>
+</form>
